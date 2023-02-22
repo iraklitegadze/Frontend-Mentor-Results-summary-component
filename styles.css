@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+   /* ### Primary*/
+
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/*## Gradients*/
+
+--Light-slate-blue/*(background)*/: hsl(252, 100%, 67%);
+--Light-royal-blue/*(background)*/: hsl(241, 81%, 54%);
+
+--Violet-blue/*(circle)*/: hsla(256, 72%, 46%, 1);
+--Persian-blue/*(circle)*/: hsla(241, 72%, 46%, 0);
+
+
+
+/*### Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+/*### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.*/
+}
+ul li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    
+}
+
+.number{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.quantity h4{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#visual{
+    margin-right: 1rem;
+    margin-left: 0.3rem;
+}
+
+#verbal{
+    margin-right: 1rem;
+    margin-left: 0.1rem;
+}
+
+main{
+    text-align: center;
+}
+
+.left{
+    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    padding:1rem 2rem 2rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.circle{
+    padding: 2.5rem;
+clip-path: circle(23%);
+background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+
+
+}
+
+.right{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.right h4{
+    text-align: left;
+}
+
+.summary{
+    margin-top: 1.5rem;
+}
+
+.left p{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 1rem 35% 1rem 35%;
+    border-radius: 2rem;
+background-color:hsl(224, 30%, 27%) ;
+color: hsl(0, 0%, 100%);
+transition: step-end 0.1s;
+}
+
+.btn:hover{
+    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    transition: step-end;
+}
+
+.quantity span{
+    color: hsl(241, 100%, 75%);
+}
+
+#reaction li:nth-child(2){
+    color: hsl(0, 100%, 67%);
+}
+
+#memory li:nth-child(2){
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal li:nth-child(2){
+    color: hsl(166, 100%, 37%);
+}
+
+#Visual li:nth-child(2){
+    color: hsl(241, 81%, 54%);
+}
+.summary .quantity:nth-child(1){
+  background-color: hsla(0, 100%, 67%, 0.1);
+    
+}
+
+.summary .quantity:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 0.1);
+      
+  }
+
+  .summary .quantity:nth-child(3){
+    background-color: hsla(166, 100%, 37%, 0.1);
+      
+  }
+
+  .summary .quantity:nth-child(4){
+    background-color: hsla(241, 81%, 54%, 0.1);
+      
+  }
+
+.quantity{
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width:978px) {
+    body{
+        margin: 3rem;
+    }
+    .maincontainer{
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 1px hsl(224, 30%, 27%);
+        border-radius: 2rem;
+       
+    }
+    
+    .left{
+        width: 45%;
+border-radius: 2rem;
+padding: 2rem 2.5rem 3.5rem 2.5rem;
+    
+    }
+.right{
+    margin: 0 auto;
+    padding: 1.5rem;
+    
+    
+}
+    .right{
+        width: 50%;
+    }
+
+    .circle{
+        padding: 4rem;
+    clip-path: circle(40%);
+    background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin-bottom: 2rem;
+    
+    }
+    .result li:nth-child(1){
+        font-weight: bold;
+        color: hsl(0, 0%, 100%);
+    }
+
+     .result li:nth-child(2){
+        font-weight: 500;
+        color: hsl(241, 100%, 75%)
+    }
+
+
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .maincontainer{
+        margin: 0 auto;
+        
+    }
+    .left p{
+        padding-right: 1rem;
+    }
+}
